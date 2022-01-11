@@ -1,0 +1,215 @@
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    background: white;
+    
+    padding: 2rem;
+
+}
+
+header .logo {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+
+}
+
+header .logo .fas,
+header .logo p {
+
+    font-size: 2rem;
+
+}
+
+header .logo p {
+
+    margin-left: 1rem;
+
+}
+
+header nav ul {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 36vw;
+
+}
+
+header nav ul li {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-weight: 400;
+    font-size: 1.1rem;
+
+    border-bottom: 1px solid;
+
+    width: calc(35vw / 5);
+
+    padding: 0.5rem 0;
+    
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+header nav ul li:hover {
+
+    background: #F9E514;
+
+    border-radius: 5px;
+
+    box-shadow: 0 0 5px black;
+
+}
+
+header .fa-bars {
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 1.5rem;
+    
+    border-radius: 5px;
+
+    width: 40px;
+    height: 40px;
+    
+    transition: 0.2s;
+    
+    cursor: pointer;
+
+}
+
+header .fa-bars:hover {
+
+    background: #F9E514;
+    color: white;
+
+    text-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
+
+}
+
+@media (max-width: 1180px) {
+
+    header nav ul {
+
+        width: 46vw;
+
+    }
+
+    header nav ul li {
+
+        width: calc(45vw / 5);
+
+    }
+    
+}
+
+@media (max-width: 1180px) {
+
+    header .fa-bars {
+
+        display: flex;
+
+    }
+
+    header nav {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        background: #F9E514;
+        
+        width: 100vw;
+        min-height: 100vh;
+        
+        position: fixed;
+        bottom: -100vh;
+        left: 0;
+
+        transition: 0.2s;
+
+    }
+
+    header nav.active {
+
+        bottom: 0;
+
+    }
+
+    header .fa-bars.active {
+
+        z-index: 2;
+
+    }
+
+    header nav ul {
+
+        width: 100vw;
+        height: 50vh;
+        
+        flex-direction: column;
+
+    }
+
+    header nav ul li {
+
+        font-size: 1.5rem;
+
+        border: 0;
+
+        width: 25%;
+
+        transition: 0.5s;
+
+    }
+    
+    header nav ul li:hover {
+        
+        background: black;
+        color: #F9E514;
+
+        width: 100%;
+        
+        border-radius: 0;
+
+    }
+    
+}
+
+@media (max-width: 720px) {
+
+    header {
+
+        position: absolute;
+        left: 20px;
+        right: 20px;
+
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    header {
+
+        top: 0;
+        left: 0;
+        right: 0;
+
+    }
+
+}
